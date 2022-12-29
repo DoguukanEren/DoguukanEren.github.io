@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <body id="anasayfaBody">
+
+    <div id="baslik">
+      
+
+    <nav>
+        <ul>
+          
+          <li><a class="btn btn-dark btn-lg " data-bs-toggle="modal" href="#exampleModalToggle2" role="button">Kayıt Ol</a></li>
+          <li class="login "><a class="btn btn-dark btn-lg " data-bs-toggle="modal" href="#exampleModalToggle1" role="button">Giriş</a></li>
+          <li><button onclick="SPTyonlendir()">
+              <img src ="sepet.png"></button></li>
+              <li class="login "><a class="btn btn-dark btn-lg " data-bs-toggle="modal" href="#exampleModalToggle3" role="button">İletişim</a></li>
+          <li><button>KATEGORILER</button></li>
+          <li><button onclick="anasayfayonlendir()">ANASAYFA</button></li>
+          
+        </ul>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img  src="trendyol-buyuk-indirim-gunleri-basliyor-kasim-ayinda-alisveris-festivali.jpg" style="height: 530px;" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img height="530px" src="renkli-rozetler.jpg"  class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img height="530px" src="black-friday-2-999x499.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </nav>
+
+      
+    </div>
+
+
+     
+    
+    <div id="login-popup">
+          <div class="kayitform">
+          <label for="username">Kullanıcı adı:</label><br>
+          <input type="text" id="username"><br>
+          <label for="password">Şifre:</label><br>
+          <input type="password" id="password"><br><br>
+          <button id="giris" onclick="girisyap()">GIRIS</button>  
+          </div>
+      </div>
+
+      
+      <div id="signup-popup">
+        <div class="">
+          <label for="username">Kullanıcı adı:</label><br>
+          <input type="text" id="kayit-username"><br>
+          <label for="password">Şifre:</label><br>
+          <input type="password" id="kayit-password"><br>
+          <label for="tel">Telefon:</label><br>
+          <input type="text" id="tel"><br><br> 
+          <button id="uyeol" onclick="kayitol()">KAYIT OL</button>
+        </div>
+      </div>  
+
+
+
+  
+  <div class="row">
+  <div class="col-10" > 
+    
+    
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="APPLE-iPhone-14-Pro.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">APPLE iPhone 14 Pro</h5>
+            <p class="card-text">
+              <i style="color: red;" class="bi bi-star-fill" ></i> <i style="color: red;" class="bi bi-star-fill" ></i> <i style="color: red;" class="bi bi-star-fill" ></i> <i style="color: red;" class="bi bi-star-fill" > <i style="color: red;" class="bi bi-star-fill" ></i></i></p>
+          </div>
+          <div class="card-footer" style="height: 50px;">
+            <strong class="text-muted" style="font-size: x-large; position: absolute; top: 395; left: 70px;  ">5500 $</strong> 
+            <a class="btn btn-dark btn-m " style="margin-top: -10px; position: absolute; top: 495px; left:250px;" data-bs-toggle="modal" href="#exampleModalToggle" role="button" >Özellikleri İçin Tıklayınız</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="SAMSUNG A73.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Samsung A73</h5>
+            <p class="card-text"><i style="color: red;" class="bi bi-star-fill" ></i> <i style="color: red;" class="bi bi-star-fill" ></i> <i style="color: red;" class="bi bi-star-fill" ></i> <i style="color: red;" class="bi bi-star" > <i style="color: red;" class="bi bi-star" ></i></i></p></p>
+          </div>
+          <div class="card-footer" style="height: 50px;">
+            <strong class="text-muted" style="font-size: x-large; position: absolute; top: 395; left: 70px;  ">3500 $</strong> 
+            <a class="btn btn-dark btn-m " style="margin-top: -10px; position: absolute; top: 495px; left:250px;" data-bs-toggle="modal" href="#exampleModalToggle" role="button" >Özellikleri İçin Tıklayınız</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="SAMSUNG-Galaxy-A04S-128GB-Akıllı-Telefon-Siyah.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy A04S</h5>
+            <p class="card-text"><i style="color: red;" class="bi bi-star-fill" ></i> <i style="color: red;" class="bi bi-star-fill" ></i> <i style="color: red;" class="bi bi-star-half" ></i> <i style="color: red;" class="bi bi-star" > <i style="color: red;" class="bi bi-star" ></i></i></p></p>
+          </div>
+          <div class="card-footer" style="height: 50px;">
+            <strong class="text-muted" style="font-size: x-large; position: absolute; top: 395; left: 70px;  ">2000 $</strong> 
+            <a class="btn btn-dark btn-m " style="margin-top: -10px; position: absolute; top: 495px; left:250px;" data-bs-toggle="modal" href="#exampleModalToggle" role="button" >Özellikleri İçin Tıklayınız</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="SAMSUNG-Galaxy-S22-Ultra.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy S22 Ultra</h5>
+            <p class="card-text"><i style="color: red;" class="bi bi-star-fill" ></i> <i style="color: red;" class="bi bi-star-fill" ></i> <i style="color: red;" class="bi bi-star-fill" ></i> <i style="color: red;" class="bi bi-star-fill" > <i style="color: red;" class="bi bi-star-fill" ></i></i></p></p>
+          </div>
+          <div class="card-footer" style="height: 50px;">
+            <strong class="text-muted" style="font-size: x-large; position: absolute; top: 395; left: 70px;  ">5400 $</strong> 
+            <a class="btn btn-dark btn-m " style="margin-top: -10px; position: absolute; top: 495px; left:250px;" data-bs-toggle="modal" href="#exampleModalToggle" role="button" >Özellikleri İçin Tıklayınız</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="XIAOMI-Redmi-Note-11-Pro-.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Xiaomi Redmi Note 11 Pro</h5>
+            <p class="card-text"><i style="color: red;" class="bi bi-star-fill" ></i> <i style="color: red;" class="bi bi-star-fill" ></i> <i style="color: red;" class="bi bi-star-fill" ></i> <i style="color: red;" class="bi bi-star-fill" > <i style="color: red;" class="bi bi-star" ></i></i></p></p>
+          </div>
+          <div class="card-footer" style="height: 50px;">
+            <strong class="text-muted" style="font-size: x-large; position: absolute; top: 395; left: 70px;  ">5100 $</strong> 
+            <a class="btn btn-dark btn-m " style="margin-top: -10px; position: absolute; top: 495px; left:250px;" data-bs-toggle="modal" href="#exampleModalToggle" role="button" >Özellikleri İçin Tıklayınız</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="iPHONE 11.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">İphone 11</h5>
+            <p class="card-text"><i style="color: red;" class="bi bi-star-fill" ></i> <i style="color: red;" class="bi bi-star-fill" ></i> <i style="color: red;" class="bi bi-star-fill" ></i> <i style="color: red;" class="bi bi-star-half" > <i style="color: red;" class="bi bi-star" ></i></i></p></p>
+          </div>
+          <div class="card-footer" style="height: 50px;">
+            <strong class="text-muted" style="font-size: x-large; position: absolute; top: 395; left: 70px;  ">4800 $</strong> 
+            <a class="btn btn-dark btn-m " style="margin-top: -10px; position: absolute; top: 495px; left:250px;" data-bs-toggle="modal" href="#exampleModalToggle" role="button" >Özellikleri İçin Tıklayınız</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  </div>
+
+
+  <div class="col-2 " >
+    
+    <ul class="list-group">
+      <li class="list-group-item active" aria-current="true">Telefon</li>
+      <li class="list-group-item">Android Telefonlar</li>
+      <li class="list-group-item">İphone İOS Telefonlar</li>
+      <li class="list-group-item">Diğer Telefonlar</li>
+    </ul>
+
+    
+    <br></br>
+
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping"> <i class="bi bi-search"></i> </span>
+      <input type="text" class="form-control" placeholder="Filitrele" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+    
+    <ul class="list-group">
+      <li class="list-group-item" >
+    <div class="form-check">
+      
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+      <label style="color: black;" class="form-check-label" for="flexRadioDefault1" >
+        Samsung
+      </label>
+    </div>
+  </li>
+
+  <li class="list-group-item" >
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <label style="color: black;" class="form-check-label" for="flexRadioDefault2">
+        Xiamoi
+      </label>
+    </div>
+  </li>
+
+  <li class="list-group-item" >
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <label style="color: black;" class="form-check-label" for="flexRadioDefault2">
+        Apple
+      </label>
+    </div>
+  </li>
+
+  <li class="list-group-item" >
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <label style="color: black;" class="form-check-label" for="flexRadioDefault2">
+        Oppo
+      </label>
+    </div>
+  </li>
+
+  <li class="list-group-item" >
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <label style="color: black;" class="form-check-label" for="flexRadioDefault2">
+        Huawei
+      </label>
+    </div>
+  </li>
+
+  <li class="list-group-item" >
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <label style="color: black;" class="form-check-label" for="flexRadioDefault2">
+        POCO
+      </label>
+    </div>
+  </li>
+
+  <li class="list-group-item" >
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <label style="color: black;" class="form-check-label" for="flexRadioDefault2">
+        Reeder
+      </label>
+    </div>
+  </li>
+
+  <li class="list-group-item" >
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <label style="color: black;" class="form-check-label" for="flexRadioDefault2">
+        General Mobile
+      </label>
+    </div>
+  </li>
+
+  <li class="list-group-item" >
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <label style="color: black;" class="form-check-label" for="flexRadioDefault2">
+        Realme
+      </label>
+    </div>
+  </li>
+
+
+  
+  </ul>
+
+
+  <br></br>
+
+
+  <ul class="list-group" > 
+    
+    <li class="list-group-item" >
+
+      <p style="text-align: center;" >Fiyat Aralğı</p>
+  <div class="input-group mb-3">
+    <span class="input-group-text">$</span>
+    <span class="input-group-text">0.00</span>
+    <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+  </div>
+  
+  <div class="input-group">
+    <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+    <span class="input-group-text">$</span>
+    <span class="input-group-text">0.00</span>
+  </div>
+      
+    </li>
+
+    <li class="list-group-item" >
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label style="color: black;" class="form-check-label" for="flexRadioDefault2">
+          1000 $ Altında
+        </label>
+      </div>
+    </li>
+
+    <li class="list-group-item" >
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label style="color: black;" class="form-check-label" for="flexRadioDefault2">
+          1000 - 2000 $ Arasında
+        </label>
+      </div>
+    </li>
+
+    <li class="list-group-item" >
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label style="color: black;" class="form-check-label" for="flexRadioDefault2">
+          2000 - 3000 $ Arasında
+        </label>
+      </div>
+    </li>
+
+    <li class="list-group-item" >
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label style="color: black;" class="form-check-label" for="flexRadioDefault2">
+          3000 - 4000 $ Arasında
+        </label>
+      </div>
+    </li>
+
+    <li class="list-group-item" >
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label style="color: black;" class="form-check-label" for="flexRadioDefault2">
+          4000 - 5000 $ Arasında
+        </label>
+      </div>
+    </li>
+
+    <li class="list-group-item" >
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label style="color: black;" class="form-check-label" for="flexRadioDefault2">
+          5000 $ Üzerinde
+        </label>
+      </div>
+    </li>
+
+  </div>
+</div>
+
+
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel">Telefonun Özellikleri </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Telefonun Özlliklerini Aşşağıda İnceleyebilirsiniz</p>
+
+        <form>
+          <div class="list-group">
+            
+          
+            <a href="#" class="list-group-item list-group-item-action list-group-item-primary" style="text-align: center;">Ekran Çözünürlüğü :	2400 x 1080</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary" style="text-align: center;">Ram Kapasitesi : 6GB RAM</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success"style="text-align: center;">Ekran Boyutu : 6.7 İnç</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-danger"style="text-align: center;">Kamera Çözünürlüğü : 12MP+12MP</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-warning"style="text-align: center;">Ön Kamera : 12MP</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-info"style="text-align: center;">Pil Gücü :	4323 mAh</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-light"style="text-align: center;">Ekran Tipi :	AMOLED</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark"style="text-align: center;">Dahili Hafıza : 256 GB</a>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary"  data-bs-toggle="modal" data-bs-dismiss="modal">Kapat</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel">GİRİŞ YAP</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Lütfen Bilgilerinizi Eksiksiz Giriniz</p>
+
+        <form>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label" style="color: black;">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label"style="color: black;">Şifreniz</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3">
+            </div>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Giriş Yap</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel">Kayıt Ol</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Lütfen Bilgilerinizi Eksiksiz Giriniz</p>
+
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label" style="color: black;">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label"style="color: black;">Şifreniz</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label"style="color: black;">Adresiniz</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Mahalle , Ana Cadde">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label"style="color: black;">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, daire, ya da blok">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label"style="color: black;">Şehir</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label"style="color: black;">İlçe</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label"style="color: black;">Posta</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck"style="color: black;">
+                KVKK Okudum Onaylıyorum
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel">İletişim</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Lütfen Bilgilerinizi Eksiksiz Giriniz</p>
+
+        <form class="row g-3">
+
+          <div class="row g-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+            <p>Konu Hakında Bilgilendirme Yapınız</p>
+            <input type="text" style="height: 450px;" class="form-control" placeholder="" aria-label="Last name">
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label" style="color: black;">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label"style="color: black;">Şifreniz</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label"style="color: black;">Adresiniz</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Mahalle , Ana Cadde">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label"style="color: black;">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, daire, ya da blok">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label"style="color: black;">Şehir</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label"style="color: black;">İlçe</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label"style="color: black;">Posta</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck"style="color: black;">
+                KVKK Okudum Onaylıyorum
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Gönder</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer id="contact" class="page-footer p-5 text-md-left">
+  <div class="container py-5">
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <h5 class="text-uppercase font-weight-bold mb-4">
+          Özer Ticaret
+        </h5>
+        <p>
+           Sosyal Medya Adreslerimze Aşşağıdan Ulaşabilirsiniz
+        </p>
+        <a href="#"><i class="bi bi-facebook text-dark mx-1 lead"></i></a>
+            <a href="#"><i class="bi bi-twitter text-dark mx-1 lead"></i></a>
+            <a href="#"><i class="bi bi-linkedin text-dark mx-1 lead"></i></a>
+            <a href="#"><i class="bi bi-instagram text-dark mx-1 lead"></i></a>
+
+      </div>
+      <div class="col-lg-2 col-md-2 mx-auto">
+        <h5 class="text-uppercase font-weight-bold mb-4">Hizmetlerimiz</h5>
+        <ul class="list-unstyled">
+          <li class="mb-1"><a href="#">Kargo</a></li>
+          <li class="mb-1"><a href="#">Paketleme</a></li>
+          <li class="mb-1"><a href="#">Depolama</a></li>
+          <li class="mb-1"><a href="#">7/24 Canlı Destek</a></li>
+          <li class="mb-1"><a href="#">E-Ticaret</a></li>
+          
+
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-2 mx-auto">
+        <h5 class="text-uppercase font-weight-bold mb-4">Sayfa Linklerimiz</h5>
+        <ul class="list-styled">
+          <li class="mb-1"><a href="#">Anasayfa</a></li>
+          <li class="mb-1"><a href="#">Hakkımızda</a></li>
+          <li class="mb-1"><a href="#">Servislerimiz</a></li>
+          <li class="mb-1"><a href="#">Sayfalar</a></li>
+          <li class="mb-1"><a href="#">İletişim</a></li>
+
+        </ul>
+      </div>
+      <div class="col-lg-3 col-xs-12 location">
+        <h5 class="text-uppercase font-weight-bold mb-4">İletişim Bilgileri</h5>
+        <p class="d-flex align-items-center"><i class=" bi bi-geo-alt text-primary mx-2 lead"></i>Aydoğan Mahallesi Merkez/Sivas</p>
+        <p class="d-flex align-items-center"><i class=" bi bi-phone text-primary mx-2 lead"></i>(+987) 654-3210</p>
+        <p class="d-flex align-items-center"><i class=" bi bi-envelope text-primary mx-2 lead"></i>ÖzerTicaretDestek@Ozer.com</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<footer class="p-3 bg-dark text-white text-center position-relative">
+              <div class="container">
+                <p class="mb-0">
+                  Tüm Hakları Saklıdır. &copy; 2022
+                </p>
+              
+              </div>
+            </footer>
+<script src="index.JS">    </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">    </script>
+</body>
+</html>
